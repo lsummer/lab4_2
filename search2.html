@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>seault</title>
+</head>
+<body>
+        	<p align="center" style="font-family:黑体; font-size:15px">已有作者信息</p>
+            <table border=1 align="center">
+                <tr>
+                    <th>姓名</th><th>年龄</th><th>国籍</th>
+                </tr>
+                    <ul>
+                        {% for author in author_list %}
+                    <tr>
+                        <td>{{ author.name }}</td>
+                        
+                        <td>{{ author.age }}</td>
+                        <td>{{ author.country }}</td>
+                    </tr>
+                            {% endfor %}
+                    </ul>
+            </body>
+</html>

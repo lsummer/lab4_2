@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+<p align="left" style="font-family:仿宋; font-size:18px">
+<a href="/search/"><-返回</a></p>
+</body>
+<body>
+<p align="center" style="font-family:黑体; font-size:20px">作者信息</p>
+<p align="center" style="font-family:仿宋; font-size:18px">
+作者：  {{author.name}}</br> 
+年龄：  {{author.age}}</br>
+国籍：  {{author.country}}</br></p>
+<p align="center" style="font-family:黑体; font-size:22px">
+著作：</p>
+<p align="center" style="font-family:黑体; font-size:20px;">
+            {% for book in book_list %}
+            <a href="/fullinformation/?id={{book.id}}">{{ book.title }}</a></br>
+            {% endfor %}
+  </p>
+</body>
+
+</html>

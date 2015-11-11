@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>图书（修改）</title>
+</head>
+
+<body>
+
+<p align="center" style="font-family:黑体; font-size:25px">图书修改</p>
+<form method="post">
+<table border=0 align="center"; style="font-family:仿宋; font-size:25px">
+	<tr><th>书名</th><td class="gray"> {{ book.title }}</td></tr>
+    <tr><th>作者</th><td class="gray"><input name="name" type="text"></td></tr>
+     <tr><th>出版商</th><td class="gray"><input name="publisher" type="text"></td></tr>
+     <tr><th>出版日期</th><td class="gray"><input name="publishdate" type="text"> <td style="font-size:15px">XXXX-XX-XX格式</td></td></tr>
+     <tr><th>价格</th><td class="gray"><input name="price" type="text"></td></tr>
+</table>
+<p align="center" >
+<td class="gray" ><input type="submit" value="保存" style="font-family:黑体; font-size:15px"> <input type="reset" value="重填" style="font-family:黑体; font-size:15px"></td>
+</p>
+</form>
+<body>
+<p align="center" style="font-family:仿宋; font-size:15px">
+<a href="#" onclick="javascript:history.back(-1);">返回上一页</a>    
+</p>
+</body>
+<p align="center" style="font-family:黑体; font-size:20px">图书原信息</p>
+<p align="center" style="font-family:仿宋; font-size:18px">
+书名：   {{book.title}}</br>
+作者：  {{author.name}}</br>
+出版商：  {{book.publisher}}</br>
+出版日期：  {{book.publishdate}}</br>
+价格：  {{book.price}}</br> 
+</p>
+</body>
+</html>
